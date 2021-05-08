@@ -109,7 +109,7 @@ function dropOut(player) {
                 secondPlayer = players[j];
             }
         }
-        if(bestPlayer.point >= 3 && bestPlayer.point > (secondPlayer.point+1)) {
+        if(bestPlayer.point >= (numberOfPLayers-1)*10 && bestPlayer.point > (secondPlayer.point+1)) {
             let konecHry = document.getElementById("konecHry");
             konecHry.style.visibility = "visible";
             konecHry.style.color = bestPlayer.color;
