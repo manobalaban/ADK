@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ADK</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <script src="players.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body style="margin:0; font-size: 20px; font-family: 'Pangolin', cursive;" onkeyup="keyup(event)" onkeydown="keydown(event)">
+        <div style="background: black; height: 100vh;">
+            <canvas id="fixCanvas" width="1000px" height="1000px" class="canvas"></canvas>
+            <canvas id="flexCanvas" width="1000px" height="1000px" class="canvas"></canvas>
+            <div id="konecHry">
+                <div style="margin-top: 124px;">KONEC HRY</div>
+                <div id="winner">GREEN WINS</div>
+            </div>
+            <div>
+                <div id="redKey" tabindex="1" class="colorBox" style="color: red" onclick="choseColor(0, 'redKey')" onkeyup="chosekeys(event, 0, 'redKey')">
+                    RED:
+                    <span id="redPoint" style="margin-left: 10px;">0</span>
+                    <div>
+                        <span class="firstKey"></span>
+                        <span class="secondKey"></span>
+                    </div>
+                </div>
+                <div id="greenKey" tabindex="1" class="colorBox" style="color: green" onclick="choseColor(1, 'greenKey')" onkeyup="chosekeys(event, 1, 'greenKey')">
+                    GREEN
+                    <span id="greenPoint" style="margin-left: 10px;">0</span>
+                    <div>
+                        <span class="firstKey"></span>
+                        <span class="secondKey"></span>
+                    </div>
+                </div>
+                <div  id="purpleKey" tabindex="1" class="colorBox" style="color: purple" onclick="choseColor(2, 'purpleKey')" onkeyup="chosekeys(event, 2, 'purpleKey')">
+                    PURPLE
+                    <span id="purplePoint" style="margin-left: 10px;">0</span>
+                    <div>
+                        <span class="firstKey"></span>
+                        <span class="secondKey"></span>
+                    </div>
+                </div>
+                <div id="blueKey" tabindex="1" class="colorBox" style="color: blue" onclick="choseColor(3, 'blueKey')" onkeyup="chosekeys(event, 3, 'blueKey')">
+                    BLUE
+                    <span id="bluePoint" style="margin-left: 10px;">0</span>
+                    <div>
+                        <span class="firstKey"></span>
+                        <span class="secondKey"></span>
+                    </div>
+                </div>
+                <div  id="orangeKey" tabindex="1" class="colorBox" style="color: orange" onclick="choseColor(4, 'orangeKey')" onkeyup="chosekeys(event, 4, 'orangeKey')">
+                    ORANGE
+                    <span id="orangePoint" style="margin-left: 10px;">0</span>
+                    <div>
+                        <span class="firstKey"></span>
+                        <span class="secondKey"></span>
+                    </div>
+                </div>
+                <div  id="greyKey" tabindex="1" class="colorBox" style="color: grey" onclick="choseColor(5, 'greyKey')" onkeyup="chosekeys(event, 5, 'greyKey')">
+                    GREY
+                    <span id="greyPoint" style="margin-left: 10px;">0</span>
+                    <div>
+                        <span class="firstKey"></span>
+                        <span class="secondKey"></span>
+                    </div>
+                </div>
+                <div class="colorBox" style="color: white">
+                    GOAL:
+                    <div id="goalBox" style="font-size: 40px;"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
