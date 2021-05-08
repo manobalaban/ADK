@@ -16,6 +16,7 @@ const players = [
         chosed : false,
         alive : true,
         point : 0,
+        boosts : [],
     },
     {
         firstKey : true,
@@ -34,6 +35,7 @@ const players = [
         chosed : false,
         alive : true,
         point : 0,
+        boosts : [],
     },
     {
         firstKey : true,
@@ -52,6 +54,7 @@ const players = [
         chosed : false,
         alive : true,
         point : 0,
+        boosts : [],
     },
     {
         firstKey : true,
@@ -70,6 +73,7 @@ const players = [
         chosed : false,
         alive : true,
         point : 0,
+        boosts : [],
     },
     {
         firstKey : true,
@@ -88,6 +92,7 @@ const players = [
         chosed : false,
         alive : true,
         point : 0,
+        boosts : [],
     },
     {
         firstKey : true,
@@ -106,5 +111,6 @@ const players = [
         chosed : false,
         alive : true,
         point : 0,
+        boosts : [],
     },
 ]

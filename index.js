@@ -1,3 +1,4 @@
+
 var stoped = false;
 var everybodyin = false;
 var numberOfPLayers = 0;
@@ -7,7 +8,24 @@ var preloaded = true;
 var gameMech = function() {
     var flex = document.getElementById("flexCanvas").getContext("2d");
     flex.clearRect(0, 0, 1000, 1000);
-    players.forEach(mooving)
+    if(boostCounter > nextBoost) {
+        nextBoost = Math.random()*500;
+        boostCounter = 0;
+        //console.log(Math.floor(Math.random()*10)+1);
+        var boostsCopy = boosts.slice();
+        var newBoost = boostsCopy[0];
+        newBoost.x = Math.random()*960 + 20;
+        newBoost.y = Math.random()*960 + 20;
+        boostsOnMap.push(newBoost);
+    } else {
+        boostCounter++;
+    }
+    boostsOnMap.forEach((boost) => {
+        var img = new Image();
+        img.src = boost.src;
+        flex.drawImage(img, boost.x, boost.y, 40, 40);
+    });
+    players.forEach(mooving);
 }
 
 var int = setInterval(gameMech, 20);
