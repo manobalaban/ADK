@@ -8,13 +8,12 @@ body {
 }
 
 .canvas {
-    border: 1px solid yellow; 
     box-sizing: content-box; 
     background: transparent;
     position: absolute;
     top: calc(50% - 500px);
     left: calc(50% - 500px);
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 .colorBox {
